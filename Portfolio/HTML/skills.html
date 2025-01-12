@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: wheat;
+            color: #333;
+        }
+        header {
+            background-color: #4DA6A7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+        }
+
+        header a{
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bolder;
+            background-color: #333;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        header h1{
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bolder;
+            padding: 10px;
+            margin: 20px;
+            font-size: 2.5rem;
+            
+        }
+
+    header a:hover {
+    background: #000000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .skill-card {
+            background: white;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px; 
+            margin: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 10px 10px;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            background-color: yellow;
+        }
+        .skill-icon {
+            font-size: 3rem;
+            color: #4DA6A7;
+            margin-bottom: 1rem;
+        }
+        .skill-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .skill-description {
+            font-size: 1rem;
+            color: #666;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">BACK</a>
+    <h1>WELCOME TO MY SKILLS</h1>
+</header>
+<div class="container">
+    <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-icon">&#128187;</div>
+            <h2 class="skill-title">Web Development</h2>
+            <p class="skill-description">Building responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, and frameworks.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">&#127912;</div>
+            <h2 class="skill-title">UI/UX Design</h2>
+            <p class="skill-description">Creating user-friendly interfaces and enhancing user experience with intuitive design principles.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">&#127912;</div>
+            <h2 class="skill-title">Graphics Design</h2>
+            <p class="skill-description">Designing visually compelling graphics using tools like Adobe Photoshop, Illustrator, and Canva.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">&#128640;</div>
+            <h2 class="skill-title">Frontend Development</h2>
+            <p class="skill-description">Implementing interactive user interfaces with a focus on performance and usability.</p>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">&#127909;</div>
+            <h2 class="skill-title">Video Editing</h2>
+            <p class="skill-description">Crafting professional video content with transitions, effects, and animations using tools like Premiere Pro and After Effects.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

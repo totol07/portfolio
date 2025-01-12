@@ -1,0 +1,152 @@
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header a {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #0288d1;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.header a:hover {
+    background: #000000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    padding: 20px;
+    background: #f9f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutme img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 5px solid #ffeb3b;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutme img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.aboutme p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: verdana;
+}
+
+.letter {
+    color: #d32f2f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .aboutme p {
+        font-size: 16px;
+    }
+}
+
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.marquee {
+    display: flex;
+    gap: 30px;
+    animation: scroll 15s linear infinite;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.company img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.company p {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+ .para p{
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    display: block;
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.959);
+    justify-content: center;
+    text-align: center;
+}
