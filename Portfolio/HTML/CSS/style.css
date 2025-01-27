@@ -1,6 +1,7 @@
 body{
         
 background-color: wheat;
+scroll-behavior: smooth;
 }
 
 .navbar{
@@ -38,8 +39,8 @@ background-color: wheat;
     font-size: 40px;
     padding: 10px;
     font-weight: bold;
-    color: black;
-    background-color: #eeff00;
+    color: rgb(255, 255, 255);
+    background-color: #002fff;
     border-radius: 15px;
 }
 
@@ -151,6 +152,16 @@ display: flex;
         background-color: rgb(255, 242, 0);
         cursor: pointer;
     }
+}
+
+.vision .box h1{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    transition: color 0.3s; 
+    font-weight: bolder;
+    text-align: center;
+
 }
 
 .vision .box img{
@@ -326,4 +337,113 @@ display: flex;
             font-size: 18px;
         }
     }
+
+/* Menu Toggle Button */
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+
+
+.sidebar.show {
+    left: 0; /* Slide in */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar a {
+        font-size: 16px;
+        color: aliceblue;
+        font-family: verdana;
+        font-weight: bolder;
+        background-color: #0020ad;
+        font-family: verdana;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        position: relative;
+        height: auto;
+        padding-top: 15px;
+    }
     
+    .sidebar.show {
+        left: 0;
+    }
+    
+    #portfolio {
+        margin-top: 10px;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .name h1 {
+        font-size: 20px;
+    }
+    
+    .vision {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vision .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+    
+    .qualification {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .qualification img {
+        width: 80%;
+        height: auto;
+    }
+}
+
